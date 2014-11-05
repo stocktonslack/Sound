@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sound</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="buttonPlay">Play</string>
+    <string name="buttonPause">Pause</string>
+    <string name="buttonStop">Stop</string>
+    <string name="videoButtonText">Click here to go to the video player!</string>
+
+</resources>
