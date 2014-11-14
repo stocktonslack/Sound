@@ -8,5 +8,8 @@
     <string name="buttonPause">Pause</string>
     <string name="buttonStop">Stop</string>
     <string name="videoButtonText">Click here to go to the video player!</string>
+    <string name="backToSound">Back to Sound</string>
+    <string name="tap">Tap the video to play</string>
+    <string name="newVid">Click for a different Video</string>
 
 </resources>

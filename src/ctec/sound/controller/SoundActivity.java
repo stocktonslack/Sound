@@ -1,6 +1,7 @@
 package ctec.sound.controller;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
@@ -67,7 +68,7 @@ public class SoundActivity extends Activity implements Runnable
 		{
 
 			@Override
-			public void onClick(View v)
+			public void onClick(View currentView)
 			{
 				soundPlayer.stop();
 
@@ -96,8 +97,24 @@ public class SoundActivity extends Activity implements Runnable
 				}
 			}
 		});
+
+		videoButton.setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View currentView)
+			{
+				Intent otherScreenIntent = new Intent(currentView.getContext(), VideoActivity.class);
+				startActivityForResult(otherScreenIntent, 0);
+			}
+
+		}
+
+		);
 	}
 
+	/**
+	 * this is required since we are implementing runnable
+	 */
 	@Override
 	public void run()
 	{
@@ -110,7 +127,7 @@ public class SoundActivity extends Activity implements Runnable
 			try
 			{
 				Thread.sleep(50);
-				currentPosition = soundPlayer.getDuration();
+				currentPosition = soundPlayer.getCurrentPosition();
 			}
 			catch (InterruptedException soundException)
 			{

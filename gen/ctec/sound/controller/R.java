@@ -1103,7 +1103,9 @@ containing a value of this type.
         public static final int listMode=0x7f060001;
         public static final int list_item=0x7f060029;
         public static final int middle=0x7f060012;
+        public static final int myPlayer=0x7f060041;
         public static final int never=0x7f060009;
+        public static final int newVidButton=0x7f060044;
         public static final int none=0x7f060010;
         public static final int normal=0x7f060000;
         public static final int pauseButton=0x7f06003d;
@@ -1111,6 +1113,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f060018;
         public static final int progress_horizontal=0x7f060019;
         public static final int radio=0x7f06002f;
+        public static final int returnButton=0x7f060042;
         public static final int search_badge=0x7f060032;
         public static final int search_bar=0x7f060031;
         public static final int search_button=0x7f060033;
@@ -1130,6 +1133,7 @@ containing a value of this type.
         public static final int stopButton=0x7f06003f;
         public static final int submit_area=0x7f060039;
         public static final int tabMode=0x7f060002;
+        public static final int textView1=0x7f060043;
         public static final int title=0x7f06002b;
         public static final int top_action_bar=0x7f060020;
         public static final int up=0x7f060021;
@@ -1192,7 +1196,9 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class raw {
-        public static final int tequilaremix=0x7f050000;
+        public static final int stocktonyoyo=0x7f050000;
+        public static final int stocktonyoyo2=0x7f050001;
+        public static final int tequilaremix=0x7f050002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1236,10 +1242,13 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000b;
         public static final int app_name=0x7f0b000d;
+        public static final int backToSound=0x7f0b0014;
         public static final int buttonPause=0x7f0b0011;
         public static final int buttonPlay=0x7f0b0010;
         public static final int buttonStop=0x7f0b0012;
         public static final int hello_world=0x7f0b000e;
+        public static final int newVid=0x7f0b0016;
+        public static final int tap=0x7f0b0015;
         public static final int title_activity_video=0x7f0b000f;
         public static final int videoButtonText=0x7f0b0013;
     }
