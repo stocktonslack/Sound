@@ -31,6 +31,7 @@ public class VideoActivity extends Activity
 		videoLocation = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.stocktonyoyo);
 		myVideoController = new MediaController(this);
 		newVideoLocation = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.stocktonyoyo2);
+		
 		// prepare the video
 		setupMedia();
 		setupListeners();
@@ -63,8 +64,8 @@ public class VideoActivity extends Activity
 			@Override
 			public void onClick(View currentView)
 			{
-				videoUri = Uri.parse("android.resource://" + VideoActivity.ctx.getPackageName() + "/raw/" + videoNames.get(stocktonyoyo));
-				myVideoView.setVideo()
+				
+				myPlayer.setVideoURI(newVideoLocation);
 			}
 		});
 	}

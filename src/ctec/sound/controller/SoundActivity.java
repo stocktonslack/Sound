@@ -42,6 +42,10 @@ public class SoundActivity extends Activity implements Runnable
 
 	private void setupListeners()
 	{
+		
+		/**
+		 * When the playButton is clicked the sound/audio file will begin to play. 
+		 */
 		playButton.setOnClickListener(new View.OnClickListener()
 		{
 
@@ -53,6 +57,9 @@ public class SoundActivity extends Activity implements Runnable
 			}
 		});
 
+		/**
+		 * When the pauseButton is clicked the sound/audio file will pause.
+		 */
 		pauseButton.setOnClickListener(new View.OnClickListener()
 		{
 
@@ -64,6 +71,9 @@ public class SoundActivity extends Activity implements Runnable
 			}
 		});
 
+		/**
+		 * When the stopButton is clicked the sound/audio file will stop.
+		 */
 		stopButton.setOnClickListener(new View.OnClickListener()
 		{
 
@@ -71,7 +81,7 @@ public class SoundActivity extends Activity implements Runnable
 			public void onClick(View currentView)
 			{
 				soundPlayer.stop();
-
+				soundPlayer = MediaPlayer.create(this.getBaseContext(), R.raw.tequilaremix);
 			}
 		});
 
